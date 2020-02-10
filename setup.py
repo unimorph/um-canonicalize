@@ -23,7 +23,7 @@ __version__ = "0.1.1"
 
 def main() -> None:
     setuptools.setup(
-        name="um-canonicalize",
+        name="um_canonicalize",
         version=__version__,
         author="Kyle Gorman",
         author_email="kylebgorman@gmail.com",
@@ -40,24 +40,27 @@ def main() -> None:
             "speech",
             "language",
         ],
-        license="Apache 2.0",
-        py_modules=["um_canonicalize"],
-        python_requires=">=3.6",
-        zip_safe=False,
-        install_requires=["PyYAML"],
-        entry_points={
-            "console_scripts": ["um_canonicalize = um_canonicalize:main"]
-        },
         classifiers=[
             "Programming Language :: Python :: 3.6",
             "Programming Language :: Python :: 3.7",
+            "Programming Language :: Python :: 3.8",
             "Development Status :: 3 - Alpha",
             "Environment :: Console",
             "License :: OSI Approved :: Apache Software License",
             "Operating System :: OS Independent",
             "Topic :: Text Processing :: Linguistic",
         ],
-        data_files=[(".", ["LICENSE.txt", "tags.yaml"])],
+        license="Apache 2.0",
+        python_requires=">=3.6",
+        zip_safe=False,
+        install_requires=["PyYAML"],
+        entry_points={
+            "console_scripts": [
+                "um_canonicalize = um_canonicalize.canonicalize:main"
+            ]
+        },
+        packages=["um_canonicalize"],
+        include_package_data=True,
     )
 
 

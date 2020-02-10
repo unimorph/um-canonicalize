@@ -69,12 +69,12 @@ def main() -> None:
     parser.add_argument("input_path")
     args = parser.parse_args()
 
-    table = _load_table(
-        pkg_resources.resource_filename("um_canonicalize", "tags.yaml")
-    )
+    table = _load_table(pkg_resources.resource_filename(__name__, "tags.yaml"))
+
     # This keeps track of how many bundles were rewritten. If run twice
     # the second time the answer should be 0.
     canonicalized = 0
+
     with open(args.input_path, "r") as source:
         # TODO: these files contain a bunch of blank lines. Probably should
         # strip them out ahead of time but alternatively we could complexify
@@ -122,3 +122,7 @@ def main() -> None:
             tsv_writer.writerow((lemma, inflection, features_str))
 
     logging.info("%d feature bundles canonicalized", canonicalized)
+
+
+if __name__ == "__main__":
+    main()
