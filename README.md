@@ -52,17 +52,17 @@ We propose a canonical ordering of tags within a feature bundle as follows.
 -   Any language-specific (e.g., `LGSPEC`) tags are then placed at the end, in
     their lexicographic order.
 
-This ordering is enforced by [`um-canonicalize`](um-canonicalize.py)\`; running
+This ordering is enforced by [`um_canonicalize`](um_canonicalize.py); running
 this tool on its own output should print "0 feature bundles canonicalized" to
 STDERR.
 
-See [`CHANGES.md`](changes.md) for changes to the schema since UniMorph 2.0.
+See [`CHANGES.md`](CHANGES.md) for changes to the schema since UniMorph 2.0.
 
 Contributing
 ------------
 
 The list of features in [`tags.yaml`](tags.yaml) has some known gaps. See
-[`CONTRIBUTING.md`](contributing.md) for information about how to submit
+[`CONTRIBUTING.md`](CONTRIBUTING.md) for information about how to submit
 improvements to this file.
 
 Author
