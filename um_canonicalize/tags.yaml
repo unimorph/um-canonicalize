@@ -56,17 +56,22 @@ categories:
     - BE2P
     - BE3S
     - BE3P
+    - ARGAC3S
   Aspect:
     - IPFV
     - PFV
     - PRF
     - PROG
+    - PRF+PROG  
     - PROSP
     - ITER
     - HAB
+    - HAB+PROG
+    - HAB+PRF
   Case:
     - NOM
     - ACC
+    - LOC
     - ERG
     - ABS
     - NOMS
@@ -79,9 +84,28 @@ categories:
     - INS
     - COM
     - VOC
+    - AT+ESS
+    - AT+ESS+ALL
+    - IN+ESS
+    - IN+ALL
+    - IN+ABL
+    - AT+ALL
+    - AT+ABL
+    - ON+ESS
+    - ON+ALL
+    - ON+ABL
+    - VOC+GEN
+    - NOM+ACC
+    - non{NOM}
+    - DAT+GEN
+    - EXCLV
+    - GEADJ
+    - BEADJ
     - COMPV
     - EQTV
     - PRIV
+    - DISTR
+    - CAUSV
     - PROPR
     - AVR
     - FRML
@@ -115,6 +139,7 @@ categories:
     - EQT
   Definiteness:
     - DEF
+    - NDEF
     - INDF
     - SPEC
     - NSPEC
@@ -151,6 +176,7 @@ categories:
     - MASC
     - FEM
     - NEUT
+    - MASC+FEM
     - BANT01
     - BANT02
     - BANT03
@@ -185,11 +211,14 @@ categories:
   'Information Structure':
     - TOP
     - FOC
+  New:
+    - LGSPEC_AMP
   Interrogativity:
     - DECL
     - INT
   Mood:
     - IND
+    - INDF3
     - SBJV
     - REAL
     - IRR
@@ -211,12 +240,14 @@ categories:
   Number:
     - SG
     - PL
+    - PC
     - GRPL
     - DU
     - TRI
     - PAUC
     - GPAUC
     - INVN
+    - SG+PL
   'Part of Speech':
     - N
     - PROPN
@@ -228,9 +259,12 @@ categories:
     - V
     - ADV
     - AUX
+    - V.AGT
     - V.PTCP
     - V.MSDR
     - V.CVB
+    - V.CVB.GEN
+    - V.CVB.SIM
     - ADP
     - COMP
     - CONJ
@@ -244,6 +278,9 @@ categories:
     - '3'
     - '4'
     - INCL
+    - 1+INCL
+    - 1+EXCL
+    - 3+INCL
     - EXCL
     - PROXI
     - OBVI
@@ -268,6 +305,12 @@ categories:
   Possession:
     - ALN
     - NALN
+    - PSS0
+    - PSS1
+    - PSS2
+    - PSS3
+    - PSS4
+    - PSS5
     - PSSD
     - PSS1S
     - PSS2S
@@ -308,12 +351,21 @@ categories:
   Tense:
     - PRS
     - PST
+    - PST.FREQ
+    - INF
     - FUT
     - IMMED
     - HOD
     - 1DAY
     - RCT
     - RMT
+    - PST+RMT
+    - FUT+RMT
+    - PST+RCT
+    - PST+IMMED
+    - PRS+IMMED
+    - FUT+IMMED
+    - NFUT
   Valency:
     - IMPRS
     - INTR
@@ -356,6 +408,7 @@ ordering:
   - Interrogativity
   - Mood
   - Number
+  - New
   - Person
   - Polarity
   - Politeness
