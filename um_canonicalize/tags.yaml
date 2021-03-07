@@ -33,10 +33,12 @@ categories:
     - AC1S
     - AC1D
     - AC1P
+    - AC1+INCL
     - AC2
     - AC2S
     - AC2D
     - AC2P
+    - AC3
     - AC3S
     - AC3SHUM
     - AC3D
@@ -247,6 +249,7 @@ categories:
     - DED
     - SIM
     - OPT
+    - CF
   Number:
     - SG
     - PL
