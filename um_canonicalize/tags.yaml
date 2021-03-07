@@ -26,9 +26,11 @@ categories:
     - NO2P
     - NO3S
     - NO3P
+    - AC1
     - AC1S
     - AC1D
     - AC1P
+    - AC2
     - AC2S
     - AC2D
     - AC2P
@@ -354,6 +356,7 @@ categories:
   Tense:
     - PRS
     - PST
+    - non{PST}
     - PST.FREQ
     - INF
     - FUT
@@ -376,6 +379,7 @@ categories:
     - DITR
     - REFL
     - RECP
+    - REFL+RECP
     - CAUS
     - APPL
   Voice:
