@@ -75,6 +75,7 @@ categories:
     - PRF+PROG
     - PROSP
     - ITER
+    - PFV+ITER
     - HAB
     - HAB+PROG
     - HAB+PRF
@@ -84,6 +85,7 @@ categories:
     - LOC
     - ERG
     - ABS
+    - ABS+GEN
     - NOMS
     - DAT
     - BEN
@@ -93,6 +95,8 @@ categories:
     - PRT
     - INS
     - COM
+    - INS+COM
+    - INS+COM+GEN
     - VOC
     - AT+ESS
     - AT+ESS+ALL
