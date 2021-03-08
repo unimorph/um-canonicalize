@@ -26,14 +26,19 @@ categories:
     - NO2P
     - NO3S
     - NO3P
+    - NO1
+    - NO2
+    - NO3
     - AC1
     - AC1S
     - AC1D
     - AC1P
+    - AC1+INCL
     - AC2
     - AC2S
     - AC2D
     - AC2P
+    - AC3
     - AC3S
     - AC3SHUM
     - AC3D
@@ -67,9 +72,11 @@ categories:
     - PFV
     - PRF
     - PROG
-    - PRF+PROG  
+    - PRF+PROG
     - PROSP
     - ITER
+    - ITER+PRF
+    - PFV+ITER
     - HAB
     - HAB+PROG
     - HAB+PRF
@@ -79,6 +86,7 @@ categories:
     - LOC
     - ERG
     - ABS
+    - ABS+GEN
     - NOMS
     - DAT
     - BEN
@@ -88,6 +96,8 @@ categories:
     - PRT
     - INS
     - COM
+    - INS+COM
+    - INS+COM+GEN
     - VOC
     - AT+ESS
     - AT+ESS+ALL
@@ -130,6 +140,7 @@ categories:
     - REM
     - PRX
     - ESS
+    - ESS+ALL+ABL
     - ALL
     - ABL
     - APPRX
@@ -230,6 +241,7 @@ categories:
     - AUPRP
     - AUNPRP
     - IMP
+    - JUS
     - COND
     - PURP
     - INTEN
@@ -242,6 +254,7 @@ categories:
     - DED
     - SIM
     - OPT
+    - CF
   Number:
     - SG
     - PL
