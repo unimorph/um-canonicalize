@@ -22,6 +22,8 @@ categories:
   'Argument Marking':
     - NO1S
     - NO1P
+    - NO1PE
+    - NO1PI
     - NO2S
     - NO2P
     - NO3S
@@ -29,11 +31,13 @@ categories:
     - NO1
     - NO2
     - NO3
+    - NO3F
+    - NO3M
     - AC1
     - AC1S
     - AC1D
     - AC1P
-    - AC1+INCL
+    - AC1I
     - AC2
     - AC2S
     - AC2D
@@ -74,16 +78,20 @@ categories:
     - PROG
     - PRF+PROG
     - PROSP
+    - INCH
     - ITER
     - ITER+PRF
     - PFV+ITER
     - HAB
     - HAB+PROG
     - HAB+PRF
+    - HAB+IPFV
   Case:
     - NOM
     - ACC
+    - ACC+COM
     - LOC
+    - LOC+APPRX
     - ERG
     - ABS
     - ABS+GEN
@@ -96,6 +104,7 @@ categories:
     - PRT
     - INS
     - COM
+    - COM+TERM
     - INS+COM
     - INS+COM+GEN
     - VOC
@@ -118,6 +127,9 @@ categories:
     - BEADJ
     - COMPV
     - EQTV
+    - EQTV+ACC
+    - EQTV+DAT
+    - EQTV+ABL
     - PRIV
     - DISTR
     - CAUSV
@@ -182,6 +194,7 @@ categories:
     - NFH
     - QUOT
     - RPHT
+    - RPRT
     - HRSY
     - INFER
     - ASSUM
@@ -233,6 +246,7 @@ categories:
     - DECL
     - INT
   Mood:
+    - DEO
     - IND
     - INDF3
     - SBJV
@@ -293,6 +307,7 @@ categories:
     - '0'
     - '1'
     - '2'
+    - '2+3'
     - '3'
     - '4'
     - INCL
@@ -323,10 +338,23 @@ categories:
   Possession:
     - ALN
     - NALN
+    - ALN+PSS1S
+    - ALN+PSS3S
+    - ALN+PSS2S
+    - ALN+PSS3P
+    - ALN+PSSRP
+    - ALN+PSSRS
+    - ALN+PSS1PI
+    - ALN+PSS1PE
+    - PSSRP+ACC
+    - PSSRS+ACC
     - PSS0
     - PSS1
+    - PSS1I
     - PSS2
     - PSS3
+    - PSS3F
+    - PSS3M
     - PSS4
     - PSS5
     - PSSD
@@ -357,6 +385,8 @@ categories:
     - PSS3P
     - PSS3PM
     - PSS3PF
+    - PSSRS
+    - PSSRP
   Switch-Reference:
     - SS
     - SSADV
@@ -368,6 +398,7 @@ categories:
     - LOG
   Tense:
     - PRS
+    - non{PRS}
     - PST
     - non{PST}
     - PST.FREQ
