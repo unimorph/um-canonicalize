@@ -93,7 +93,7 @@ def main() -> None:
                 except KeyError:
                     mtc = re.match(LGSPEC, feature)
                     if mtc:
-                        index = LGSPEC_START + int(mtc.group(2))
+                        index = LGSPEC_START + int(mtc.group(1))
                     else:
                         logging.error(
                             "Unknown feature: %r (file %s, line %d)",
