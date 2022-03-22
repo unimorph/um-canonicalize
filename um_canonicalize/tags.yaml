@@ -22,15 +22,30 @@ categories:
   'Argument Marking':
     - NO1S
     - NO1P
+    - NO1PE
+    - NO1PI
     - NO2S
     - NO2P
     - NO3S
     - NO3P
+    - NO1
+    - NO2
+    - NO3
+    - NO3F
+    - NO3M
+    - AC1
     - AC1S
+    - AC1D
     - AC1P
+    - AC1I
+    - AC2
     - AC2S
+    - AC2D
     - AC2P
+    - AC3
     - AC3S
+    - AC3SHUM
+    - AC3D
     - AC3P
     - AB1S
     - AB1P
@@ -61,14 +76,25 @@ categories:
     - PFV
     - PRF
     - PROG
+    - PRF+PROG
     - PROSP
+    - INCH
     - ITER
+    - ITER+PRF
+    - PFV+ITER
     - HAB
+    - HAB+PROG
+    - HAB+PRF
+    - HAB+IPFV
   Case:
     - NOM
     - ACC
+    - ACC+COM
+    - LOC
+    - LOC+APPRX
     - ERG
     - ABS
+    - ABS+GEN
     - NOMS
     - DAT
     - BEN
@@ -78,10 +104,35 @@ categories:
     - PRT
     - INS
     - COM
+    - COM+TERM
+    - INS+COM
+    - INS+COM+GEN
     - VOC
+    - AT+ESS
+    - AT+ESS+ALL
+    - IN+ESS
+    - IN+ALL
+    - IN+ABL
+    - AT+ALL
+    - AT+ABL
+    - ON+ESS
+    - ON+ALL
+    - ON+ABL
+    - VOC+GEN
+    - NOM+ACC
+    - non{NOM}
+    - DAT+GEN
+    - EXCLV
+    - GEADJ
+    - BEADJ
     - COMPV
     - EQTV
+    - EQTV+ACC
+    - EQTV+DAT
+    - EQTV+ABL
     - PRIV
+    - DISTR
+    - CAUSV
     - PROPR
     - AVR
     - FRML
@@ -101,6 +152,7 @@ categories:
     - REM
     - PRX
     - ESS
+    - ESS+ALL+ABL
     - ALL
     - ABL
     - APPRX
@@ -115,6 +167,7 @@ categories:
     - EQT
   Definiteness:
     - DEF
+    - NDEF
     - INDF
     - SPEC
     - NSPEC
@@ -141,6 +194,7 @@ categories:
     - NFH
     - QUOT
     - RPHT
+    - RPRT
     - HRSY
     - INFER
     - ASSUM
@@ -151,6 +205,7 @@ categories:
     - MASC
     - FEM
     - NEUT
+    - MASC+FEM
     - BANT01
     - BANT02
     - BANT03
@@ -185,17 +240,22 @@ categories:
   'Information Structure':
     - TOP
     - FOC
+  New:
+    - LGSPEC_AMP
   Interrogativity:
     - DECL
     - INT
   Mood:
+    - DEO
     - IND
+    - INDF3
     - SBJV
     - REAL
     - IRR
     - AUPRP
     - AUNPRP
     - IMP
+    - JUS
     - COND
     - PURP
     - INTEN
@@ -208,15 +268,18 @@ categories:
     - DED
     - SIM
     - OPT
+    - CF
   Number:
     - SG
     - PL
+    - PC
     - GRPL
     - DU
     - TRI
     - PAUC
     - GPAUC
     - INVN
+    - SG+PL
   'Part of Speech':
     - N
     - PROPN
@@ -228,9 +291,12 @@ categories:
     - V
     - ADV
     - AUX
+    - V.AGT
     - V.PTCP
     - V.MSDR
     - V.CVB
+    - V.CVB.GEN
+    - V.CVB.SIM
     - ADP
     - COMP
     - CONJ
@@ -241,9 +307,13 @@ categories:
     - '0'
     - '1'
     - '2'
+    - '2+3'
     - '3'
     - '4'
     - INCL
+    - 1+INCL
+    - 1+EXCL
+    - 3+INCL
     - EXCL
     - PROXI
     - OBVI
@@ -268,6 +338,25 @@ categories:
   Possession:
     - ALN
     - NALN
+    - ALN+PSS1S
+    - ALN+PSS3S
+    - ALN+PSS2S
+    - ALN+PSS3P
+    - ALN+PSSRP
+    - ALN+PSSRS
+    - ALN+PSS1PI
+    - ALN+PSS1PE
+    - PSSRP+ACC
+    - PSSRS+ACC
+    - PSS0
+    - PSS1
+    - PSS1I
+    - PSS2
+    - PSS3
+    - PSS3F
+    - PSS3M
+    - PSS4
+    - PSS5
     - PSSD
     - PSS1S
     - PSS2S
@@ -296,6 +385,8 @@ categories:
     - PSS3P
     - PSS3PM
     - PSS3PF
+    - PSSRS
+    - PSSRP
   Switch-Reference:
     - SS
     - SSADV
@@ -307,13 +398,24 @@ categories:
     - LOG
   Tense:
     - PRS
+    - non{PRS}
     - PST
+    - non{PST}
+    - PST.FREQ
+    - INF
     - FUT
     - IMMED
     - HOD
     - 1DAY
     - RCT
     - RMT
+    - PST+RMT
+    - FUT+RMT
+    - PST+RCT
+    - PST+IMMED
+    - PRS+IMMED
+    - FUT+IMMED
+    - NFUT
   Valency:
     - IMPRS
     - INTR
@@ -321,6 +423,7 @@ categories:
     - DITR
     - REFL
     - RECP
+    - REFL+RECP
     - CAUS
     - APPL
   Voice:
@@ -356,6 +459,7 @@ ordering:
   - Interrogativity
   - Mood
   - Number
+  - New
   - Person
   - Polarity
   - Politeness

@@ -43,7 +43,7 @@ import yaml
 # TODO(feature): Deal with locative case combinations like `IN+ESS`.
 # TODO(feature): Deal with the CN_R_MN switch-reference schemata.
 
-LGSPEC = r"LGSPEC(\d{2,})$"
+LGSPEC = r"LGSPEC(\d{1,})$"
 
 # Added to the integer in LGSPEC, this gives us its index.
 LGSPEC_START = 24
